@@ -66,3 +66,11 @@ if (a >= 90 && a <= 100) return 'A';
 
 return 'out of rating';
 }
+
+module.exports = {
+    getMultiplyOrSumm,
+    getPosition,
+    summPositive,
+    calc,
+    getGrade
+}

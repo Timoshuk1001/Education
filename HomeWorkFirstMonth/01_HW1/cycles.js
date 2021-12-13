@@ -108,3 +108,13 @@ function reverseNumber(x) {
 
   return result;
 }
+
+module.exports = {
+  summEvenNubmers,
+  isPrime,
+  sqrtNatural,
+  binarySearch,
+  factorial,
+  summGivenNumber,
+  reverseNumber
+}

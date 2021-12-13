@@ -152,6 +152,8 @@ function reversePartsElem(array) {
   return array;
 }
 
+console.log(reversePartsElem([1,2,3,4]))
+
 // 9.	Отсортировать массив (пузырьком (Bubble), выбором (Select), вставками (Insert)) 
 
 // Пузырьком (Bubble)
@@ -211,7 +213,7 @@ function insertSort(array) {
 
 // Quick
 
-function QuickSort(array) {
+function quickSort(array) {
     if (array.length === 0) return array;
     let a = [];
     let b = []; 
@@ -221,7 +223,7 @@ function QuickSort(array) {
       a[a.length] = array[i];
     } else b[b.length] = array[i];
   }
-    return QuickSort(a).concat(p,QuickSort(b));
+    return quickSort(a).concat(p,quickSort(b));
 }
 
 // Merge
@@ -327,4 +329,25 @@ function heapSort(array){
     lastChild--;
   }
   return array;
+}
+
+module.exports = {
+  minElementArray,
+  maxElementArray,
+  minIndexElementArray,
+  maxIndexElementArray,
+  summElemOddIndex,
+  arrayReverse,
+  arrayReverse2,
+  arrayReverse3,
+  arrayReverse4,
+  numberOddElem,
+  reversePartsElem,
+  bubbleSort,
+  selectSort,
+  insertSort,
+  quickSort,
+  mergeSort,
+  shellSort,
+  heapSort
 }
