@@ -1,0 +1,22 @@
+body {
+    background-color: bisque;
+    font-family: "Comic Sans MS";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    min-height: 350px;
+    width: 50%;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+#commit {
+    margin-top: 15px;
+}
+
+
