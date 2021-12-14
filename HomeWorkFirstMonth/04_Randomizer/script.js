@@ -33,7 +33,7 @@ function randomNumber() {
     }
 
     if(resultCount === 1) {
-        genNumber.textContent = 'Generated number: ';// + result;
+        genNumber.textContent = 'Generated number: ';
     }
     genNumber.textContent += result + ' ';
 
