@@ -4,6 +4,7 @@ const genNumber = document.getElementById('genNumber');
 const commitBtn = document.getElementById('commit');
 
 const resultRndNumber = [];
+let resultCount = 1;
 
 document.getElementById('reset').addEventListener('click', reset);
 
@@ -22,6 +23,7 @@ function randomNumber() {
 
     if (resultRndNumber.length === maxValue - 1){
         commitBtn.disabled = true;
+        genNumber.textContent = 'Generated number: Elements are over'
         return;
     }
 
@@ -29,14 +31,20 @@ function randomNumber() {
         randomNumber();
         return;
     }
-    genNumber.textContent = 'Generated number: ' + result;
+
+    if(resultCount === 1) {
+        genNumber.textContent = 'Generated number: ';// + result;
+    }
+    genNumber.textContent += result + ' ';
+
     resultRndNumber.push(result);
+    resultCount++;
 }
 
 function reset() {
     minInput.value = '';
     maxInput.value = '';
-    genNumber.textContent = '';
+    genNumber.textContent = 'Generated number: ';
     resultRndNumber.length = 0;
     commitBtn.disabled = false;
 }
