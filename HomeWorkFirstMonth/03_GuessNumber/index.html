@@ -1,16 +1,73 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Угадай число!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<div class="wrapper">
 <h1>Угадай число!</h1>
-<h2>Есть два варианта игры.</h2>
-<p>Угадать число от 1 до 100 за 5 попыток.</p>
-<p>Либо задать свой диапазон чисел и количество попыток.</p>
-<button>От 1 до 100</button>
-<button>Задать диапазон</button>
+<div class="hello" id="hello">
+<p>Привет, предлагаю сыграть в игру по угадыванию числа!</p>
+<p>Есть два варианта игры, угадать число от 1 до 100 за 5 попыток, либо ввести свои параметры.</p>
+<p>Что выбираешь?</p>
+    <input type="submit" value="От 1 до 100" id="firstGame" class="submit1">
+    <input type="submit" value="Ввести свои значения" id="secondGame" class="submit2">
+
+</div>
+<div class="firstGame" hidden="true" id="start1">
+<p>Я загадал число от 1 до 100. Попробуй угадать его за 5 попыток!</p>
+
+<div class="form">
+    <label for="inputNum">Ввод числа: </label>
+    <input type="text" id="inputNum" class="inputNum">
+    <input type="submit" value="Попробовать!" class="getTry" id="getTry">
+</div>
+
+<div class="result">
+    <p class="lastNumber" id="lastNumber"></p>
+    <p class="lastResult" id="lastResult"></p>
+    <p class="hotOrCold" id="hotOrCold"></p>
+</div>
+
+<div class="reset">
+    <input type="submit" value="Перезапустить игру!" class="reset" id="reset">
+</div>
+</div>
+
+<div class="secondGame" hidden="true" id="start2">
+<p>Попробуй сам задать параметры в диапазоне от 1 до 200 и с количеством попыток до 15.</p>
+
+<div class="form2">
+    <label for="minEl">От:</label>
+    <input type="text" id="minEl">
+    <label for="maxEl">До:</label>
+    <input type="text" id="maxEl">
+    <br>
+    <label for="attempts">Попыток:</label>
+    <input type="text" id="attempts">
+    <input type="submit" value="Задать!" id="getTry2">
+    <input type="text" hidden="true" id="inputPersonNum">
+    <input type="submit" hidden="true" value="Угадать!" id="start">
+    <p id="genNumber"></p>
+</div>
+
+<div class="result2">
+    <p id="lastNumber2"></p>
+    <p id="lastResult2"></p>
+    <p id="lowOrHi2"></p>
+</div>
+    <div class="reset2">
+        <input type="submit" value="Перезапустить игру!" class="reset2" id="reset2">
+    </div>
+</div>
+
+
+<div class="endGame">
+    <input type="submit" value="Закончить игру" class="gameOver" id="gameOver">
+</div>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

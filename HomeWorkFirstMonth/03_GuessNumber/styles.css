@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: bisque;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+.wrapper {
+    margin: 150px auto;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit1 {
+    margin-left: 150px;
+}
+
+.submit2 {
+    margin-left: 200px;
+}
+
+.reset2 {
+    margin-left: 134px;
+}
+
+.reset {
+    margin-left: 90px;
+}
