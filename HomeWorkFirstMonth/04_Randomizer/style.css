@@ -7,9 +7,10 @@ body {
 }
 
 .wrapper {
-    min-height: 350px;
+    min-height: 56vh;
     width: 50%;
     border: 1px solid black;
+    border-radius: 10px;
     display: block;
     text-align: center;
     align-items: center;
@@ -17,6 +18,9 @@ body {
 
 #commit {
     margin-top: 15px;
+}
+
+.status {
 }
 
 

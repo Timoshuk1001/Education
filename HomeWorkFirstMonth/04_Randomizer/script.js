@@ -2,17 +2,29 @@ const minInput = document.getElementById('min');
 const maxInput = document.getElementById('max');
 const genNumber = document.getElementById('genNumber');
 const commitBtn = document.getElementById('commit');
+const minStatus = document.getElementById('min_status');
+const maxStatus = document.getElementById('max_status');
+const resetBtn = document.getElementById('reset');
 
 const resultRndNumber = [];
 let resultCount = 1;
 
-document.getElementById('reset').addEventListener('click', reset);
+resetBtn.addEventListener('click', reset);
 
 commitBtn.addEventListener('click', randomNumber);
 
 function randomNumber() {
+    resetBtn.disabled = false;
     const minValue = minInput.value;
     const maxValue = maxInput.value;
+
+
+    if(!minValue || !maxValue){
+        if(!minValue) minStatus.textContent = 'You must enter min value!';
+        if(!maxValue) maxStatus.textContent = 'You must enter max value';
+
+        return;
+    }
 
     if (maxValue <= minValue) {
         genNumber.textContent = 'Wrong input! Max <= Min';
@@ -44,7 +56,9 @@ function randomNumber() {
 function reset() {
     minInput.value = '';
     maxInput.value = '';
-    genNumber.textContent = 'Generated number: ';
     resultRndNumber.length = 0;
     commitBtn.disabled = false;
+    minStatus.textContent = '';
+    maxStatus.textContent = '';
+    resetBtn.disabled = true;
 }
