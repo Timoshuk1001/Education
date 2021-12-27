@@ -167,3 +167,17 @@ function kek(i) {
 }
 
 console.log(kek(1))
+
+
+module.exports = {
+    figureOne,
+    figureTwo,
+    figureThree,
+    figureFour,
+    figureFive,
+    figureSix,
+    figureSeven,
+    figureEight,
+    figureNine,
+    kek
+}
