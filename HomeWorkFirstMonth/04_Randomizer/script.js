@@ -56,6 +56,7 @@ function randomNumber() {
 function reset() {
     minInput.value = '';
     maxInput.value = '';
+    genNumber.textContent = 'Generated number: ';
     resultRndNumber.length = 0;
     commitBtn.disabled = false;
     minStatus.textContent = '';
