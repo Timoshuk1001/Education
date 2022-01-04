@@ -4,7 +4,7 @@
 // -Яйца варить 5 минут
 // -Вместительность емкости не более 5 яиц одновременно
 
-function getCookingTime (eggsAmount) {
+function getCookingTime(eggsAmount) {
     let result = 0;
     let eggsBoil = 5;
 
@@ -21,7 +21,7 @@ console.log(getCookingTime(9)); //returns 10 (because capacity is 5 so we need t
 // 2.Получая массив чисел. Все они либо нечетные, либо четные, кроме
 // одного. Тебе нужно его найти.
 
-function getNumber (array) {
+function getNumber(array) {
     let result = 0;
     let arrayOdd = [];
     let arrayEven = [];
@@ -70,7 +70,7 @@ let arr = [{
 }];
 
 console.log(findTitle(arr, 'js')); // return [{ title: 'I like JS'}, { title: 'Js - is the best!' }
-
+console.log(findTitle(arr, 'some'))
 
 // 4. Принимая строку, ваша функция должна вернуть обьект, в котором
 // ключи – символы строки, значение – количество повторений символов в
@@ -127,3 +127,11 @@ console.log(getNextPalindrome(99)) //returns 101
 console.log(getNextPalindrome(132)) // returns 141
 console.log(getNextPalindrome(888)) // returns 898
 console.log(getNextPalindrome(999)) // returns 1001
+
+module.exports = {
+    getCookingTime,
+    getNumber,
+    findTitle,
+    countCharacters,
+    getNextPalindrome
+}
