@@ -6,6 +6,6 @@
     "@types/jest": "^27.4.0"
   },
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest"
   }
 }
