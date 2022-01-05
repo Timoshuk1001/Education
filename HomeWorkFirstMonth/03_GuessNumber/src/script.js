@@ -211,3 +211,7 @@ endGame.addEventListener('click', function (){
 })
 
 
+module.exports = {
+    randomNumberPerson,
+    tryGuess
+}

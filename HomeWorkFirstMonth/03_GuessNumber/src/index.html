@@ -8,7 +8,7 @@
 <body>
 <div class="wrapper">
 <h1>Угадай число!</h1>
-<div class="hello" id="hello">
+<div class="wrapper__hello" id="hello">
 <p>Привет, предлагаю сыграть в игру по угадыванию числа!</p>
 <p>Есть два варианта игры, угадать число от 1 до 100 за 5 попыток, либо ввести свои параметры.</p>
 <p>Что выбираешь?</p>
@@ -40,7 +40,7 @@
 <p>Попробуй сам задать параметры в диапазоне от 1 до 200 и с количеством попыток до 15.</p>
 
 <div class="form2">
-    <label for="minEl">От:</label>
+    <label for="minEl" class="form2__minEl">От:</label>
     <input type="text" id="minEl">
     <label for="maxEl">До:</label>
     <input type="text" id="maxEl">
@@ -68,6 +68,6 @@
     <input type="submit" value="Закончить игру" class="gameOver" id="gameOver">
 </div>
 </div>
-<script src="script.js"></script>
+<script src="src/script.js"></script>
 </body>
 </html>

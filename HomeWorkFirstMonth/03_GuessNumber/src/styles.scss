@@ -7,7 +7,8 @@ body {
 }
 
 .wrapper {
-    margin: 150px auto;
+    border: 1px solid black;
+    margin: 0 auto;
     height: 300px;
     width: 50%;
     display: flex;
@@ -22,6 +23,7 @@ body {
 
 .submit2 {
     margin-left: 200px;
+    border: 2px solid red;
 }
 
 .reset2 {
@@ -30,4 +32,8 @@ body {
 
 .reset {
     margin-left: 90px;
+}
+
+.form2__minEl {
+    margin-left: 52px;
 }

@@ -10,7 +10,7 @@ describe('getMultiplyOrSumm', function (){
         assert.equal(getMultiplyOrSumm(1, 2), 3);
         assert.equal(getMultiplyOrSumm(2, 3), 6);
     });
-    it('argument should be a "number"', function (){
+    it('argument should be a "number', function (){
        assert.equal(getMultiplyOrSumm('1', 2), 'incorrect input');
     });
     it('argument should be b "number"', function (){

@@ -63,3 +63,5 @@ function reset() {
     maxStatus.textContent = '';
     resetBtn.disabled = true;
 }
+
+module.exports = { randomNumber }

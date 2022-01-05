@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1640625452071" clover="3.2.0">
-  <project timestamp="1640625452071" name="All files">
+<coverage generated="1640630453265" clover="3.2.0">
+  <project timestamp="1640630453266" name="All files">
     <metrics statements="95" coveredstatements="95" conditionals="40" coveredconditionals="39" methods="10" coveredmethods="10" elements="145" coveredelements="144" complexity="0" loc="95" ncloc="95" packages="1" files="1" classes="1"/>
     <file name="figures.js" path="D:\CoursesDevEducation\HomeWorks\HomeWorkFirstMonth\02_Stars\figures.js">
       <metrics statements="95" coveredstatements="95" conditionals="40" coveredconditionals="39" methods="10" coveredmethods="10"/>
@@ -21,15 +21,15 @@
       <line num="25" count="14" type="stmt"/>
       <line num="27" count="2" type="stmt"/>
       <line num="30" count="1" type="stmt"/>
-      <line num="33" count="1" type="stmt"/>
-      <line num="35" count="1" type="stmt"/>
-      <line num="36" count="7" type="stmt"/>
-      <line num="37" count="7" type="stmt"/>
-      <line num="38" count="42" type="cond" truecount="4" falsecount="0"/>
-      <line num="39" count="11" type="stmt"/>
-      <line num="40" count="31" type="stmt"/>
-      <line num="42" count="7" type="stmt"/>
-      <line num="44" count="1" type="stmt"/>
+      <line num="33" count="2" type="stmt"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="36" count="14" type="stmt"/>
+      <line num="37" count="14" type="stmt"/>
+      <line num="38" count="84" type="cond" truecount="4" falsecount="0"/>
+      <line num="39" count="22" type="stmt"/>
+      <line num="40" count="62" type="stmt"/>
+      <line num="42" count="14" type="stmt"/>
+      <line num="44" count="2" type="stmt"/>
       <line num="47" count="1" type="stmt"/>
       <line num="50" count="1" type="stmt"/>
       <line num="52" count="1" type="stmt"/>

@@ -6,9 +6,9 @@ body {
     justify-content: center;
 }
 
-.wrapper {
+.container {
     min-height: 56vh;
-    width: 50%;
+    width: 500px;
     border: 1px solid black;
     border-radius: 10px;
     display: block;
@@ -20,7 +20,5 @@ body {
     margin-top: 15px;
 }
 
-.status {
-}
 
 

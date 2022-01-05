@@ -1,0 +1,23 @@
+{
+  "name": "03_GuessNumber",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Svyryda",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.45.2"
+  },
+  "scripts": {
+    "cmd": "gulp",
+    "build": "yarn cmd default",
+    "watch": "yarn cmd watch",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
