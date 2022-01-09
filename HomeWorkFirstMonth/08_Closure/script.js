@@ -41,20 +41,25 @@ console.log(tickets([25,25,50]))
 // недоступна. Не используйте BigInt.
 
 function getSum(a, b) {
-    const sumArr = a.split('');
-    const newArr = sumArr.map(Number) // создаем массив с типом Number
+    const sumArr = a.split('').reverse();
+    const newArr = sumArr.map(Number)
 
-    const sumArr2= b.split('');
+    const sumArr2= b.split('').reverse();
     const  newArr2 = sumArr2.map(Number)
-
+    let acc = 0;
     const sum =  newArr2.map(function (num, ind) {
-        return num + newArr[ind];
-        });
-        let x = sum.join('')
-        return x;
-    }
+        let sum =num +acc+ newArr[ind];
+        acc = sum >= 10 ? 1 : 0;
+        return sum % 10;
+    });
+
+    if (acc===1) sum.push(acc);
+    let x = sum.reverse().join('')
+    return x;
+}
 
 console.log(getSum('123','324'))
+console.log(getSum('999', '999'))
 
 // 3. Создайте функцию, которая получает два аргумента: первый -
 // это массив объектов, второй - строка (имя автора). Ваша
