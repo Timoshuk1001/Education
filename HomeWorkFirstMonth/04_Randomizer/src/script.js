@@ -6,7 +6,7 @@ let resultCount = 1;
 
 
 function randomNumber() {
-    document.getElementById('reset').disabled = false;
+    //document.getElementById('reset').disabled = false;
     const minValue = Number.parseInt(getInputValue('min'), 10);
     const maxValue = Number.parseInt(getInputValue('max'), 10);
 

@@ -10,7 +10,7 @@
     "cmd": "gulp",
     "build": "yarn cmd default",
     "watch": "yarn cmd watch",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "jest":{
     "testEnvironment": "jsdom"
